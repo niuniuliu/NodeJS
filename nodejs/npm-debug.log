@@ -1,0 +1,1360 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'sharp' ]
+2 info using npm@2.1.11
+3 info using node@v0.10.33
+4 verbose node symlink /usr/local/bin/node
+5 verbose config Skipping project config: /Users/TimLiu/.npmrc. (matches userconfig)
+6 silly cache add args [ 'sharp', null ]
+7 verbose cache add spec sharp
+8 silly cache add parsed spec { raw: 'sharp',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'sharp',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed sharp@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'sharp', range: '*', hasData: false }
+13 silly mapToRegistry name sharp
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/sharp
+17 verbose addNameRange registry:https://registry.npmjs.org/sharp not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/sharp
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 00:16:40
+21 verbose request id a8e14c3e7cb35c99
+22 verbose etag "4WP78ZVET5ZK2A9MRSFY4DV4Y"
+23 http request GET https://registry.npmjs.org/sharp
+24 http 304 https://registry.npmjs.org/sharp
+25 silly get cb [ 304,
+25 silly get   { date: 'Thu, 11 Dec 2014 16:16:40 GMT',
+25 silly get     server: 'Apache',
+25 silly get     via: '1.1 varnish',
+25 silly get     'last-modified': 'Thu, 11 Dec 2014 16:16:41 GMT',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     etag: '"4WP78ZVET5ZK2A9MRSFY4DV4Y"',
+25 silly get     age: '0',
+25 silly get     'x-served-by': 'cache-ty68-TYO',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1418314600.696094,VS0,VE475',
+25 silly get     vary: 'Accept',
+25 silly get     'content-length': '0',
+25 silly get     'keep-alive': 'timeout=10, max=50',
+25 silly get     connection: 'Keep-Alive' } ]
+26 verbose etag https://registry.npmjs.org/sharp from cache
+27 silly addNameRange number 2 { name: 'sharp', range: '*', hasData: true }
+28 silly addNameRange versions [ 'sharp',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.7',
+28 silly addNameRange     '0.0.8',
+28 silly addNameRange     '0.0.9',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.4.2',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1' ] ]
+29 verbose addNamed sharp@0.8.1
+30 silly addNamed semver.valid 0.8.1
+31 silly addNamed semver.validRange 0.8.1
+32 silly cache afterAdd sharp@0.8.1
+33 verbose afterAdd /Users/TimLiu/.npm/sharp/0.8.1/package/package.json not in flight; writing
+34 verbose afterAdd /Users/TimLiu/.npm/sharp/0.8.1/package/package.json written
+35 silly install resolved [ { name: 'sharp',
+35 silly install resolved     version: '0.8.1',
+35 silly install resolved     author: { name: 'Lovell Fuller', email: 'npm@lovell.info' },
+35 silly install resolved     contributors:
+35 silly install resolved      [ [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object] ],
+35 silly install resolved     description: 'High performance Node.js module to resize JPEG, PNG, WebP and TIFF images using the libvips library',
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --slow=5000 --timeout=10000 ./test/unit/*.js',
+35 silly install resolved        install: 'node-gyp rebuild' },
+35 silly install resolved     main: 'index.js',
+35 silly install resolved     repository: { type: 'git', url: 'git://github.com/lovell/sharp' },
+35 silly install resolved     keywords:
+35 silly install resolved      [ 'jpeg',
+35 silly install resolved        'png',
+35 silly install resolved        'webp',
+35 silly install resolved        'tiff',
+35 silly install resolved        'resize',
+35 silly install resolved        'thumbnail',
+35 silly install resolved        'crop',
+35 silly install resolved        'libvips',
+35 silly install resolved        'vips' ],
+35 silly install resolved     dependencies:
+35 silly install resolved      { bluebird: '^2.3.11',
+35 silly install resolved        color: '^0.7.1',
+35 silly install resolved        nan: '^1.4.1',
+35 silly install resolved        semver: '^4.1.0' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { mocha: '^2.0.1',
+35 silly install resolved        'mocha-jshint': '^0.0.9',
+35 silly install resolved        istanbul: '^0.3.2',
+35 silly install resolved        coveralls: '^2.11.2' },
+35 silly install resolved     license: 'Apache 2.0',
+35 silly install resolved     engines: { node: '>=0.10' },
+35 silly install resolved     gypfile: true,
+35 silly install resolved     gitHead: 'f4cc6a2db4e2ee18543a1fe3cdbed421ef7fc21b',
+35 silly install resolved     bugs: { url: 'https://github.com/lovell/sharp/issues' },
+35 silly install resolved     homepage: 'https://github.com/lovell/sharp',
+35 silly install resolved     _id: 'sharp@0.8.1',
+35 silly install resolved     _shasum: 'd1c50e2689e6db1dd9bb6c2569490a88c6976232',
+35 silly install resolved     _from: 'sharp@*',
+35 silly install resolved     _npmVersion: '2.1.6',
+35 silly install resolved     _nodeVersion: '0.10.33',
+35 silly install resolved     _npmUser: { name: 'lovell', email: 'npm@lovell.info' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'd1c50e2689e6db1dd9bb6c2569490a88c6976232',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/sharp/-/sharp-0.8.1.tgz' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/sharp/-/sharp-0.8.1.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install sharp@0.8.1 into /Users/TimLiu
+37 info installOne sharp@0.8.1
+38 verbose installOne of sharp to /Users/TimLiu not in flight; installing
+39 verbose lock using /Users/TimLiu/.npm/_locks/sharp-0aeac484194043a4.lock for /Users/TimLiu/node_modules/sharp
+40 silly install write writing sharp 0.8.1 to /Users/TimLiu/node_modules/sharp
+41 silly cache addNamed cb sharp@0.8.1
+42 verbose unbuild node_modules/sharp
+43 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp
+44 verbose tar unpack /Users/TimLiu/.npm/sharp/0.8.1/package.tgz
+45 verbose tar unpacking to /Users/TimLiu/node_modules/sharp
+46 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm modified mode [ 'package.json', 509, 493 ]
+50 silly gunzTarPerm extractEntry .npmignore
+51 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm modified mode [ 'README.md', 509, 493 ]
+54 silly gunzTarPerm extractEntry LICENSE
+55 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+56 silly gunzTarPerm extractEntry index.js
+57 silly gunzTarPerm modified mode [ 'index.js', 509, 493 ]
+58 silly gunzTarPerm extractEntry binding.gyp
+59 silly gunzTarPerm modified mode [ 'binding.gyp', 509, 493 ]
+60 silly gunzTarPerm extractEntry icc/USWebCoatedSWOP.icc
+61 silly gunzTarPerm modified mode [ 'icc/USWebCoatedSWOP.icc', 436, 420 ]
+62 silly gunzTarPerm extractEntry icc/sRGB_IEC61966-2-1_black_scaled.icc
+63 silly gunzTarPerm modified mode [ 'icc/sRGB_IEC61966-2-1_black_scaled.icc', 436, 420 ]
+64 silly gunzTarPerm extractEntry src/common.cc
+65 silly gunzTarPerm modified mode [ 'src/common.cc', 509, 493 ]
+66 silly gunzTarPerm extractEntry src/common.h
+67 silly gunzTarPerm modified mode [ 'src/common.h', 509, 493 ]
+68 silly gunzTarPerm extractEntry src/metadata.cc
+69 silly gunzTarPerm modified mode [ 'src/metadata.cc', 509, 493 ]
+70 silly gunzTarPerm extractEntry src/metadata.h
+71 silly gunzTarPerm extractEntry src/resize.cc
+72 silly gunzTarPerm modified mode [ 'src/resize.cc', 509, 493 ]
+73 silly gunzTarPerm extractEntry src/resize.h
+74 silly gunzTarPerm extractEntry src/sharp.cc
+75 silly gunzTarPerm modified mode [ 'src/sharp.cc', 509, 493 ]
+76 silly gunzTarPerm extractEntry src/utilities.cc
+77 silly gunzTarPerm modified mode [ 'src/utilities.cc', 509, 493 ]
+78 silly gunzTarPerm extractEntry src/utilities.h
+79 silly gunzTarPerm modified mode [ 'src/utilities.h', 509, 493 ]
+80 silly gunzTarPerm extractEntry preinstall.sh
+81 silly gunzTarPerm modified mode [ 'preinstall.sh', 509, 493 ]
+82 info preinstall sharp@0.8.1
+83 silly prepareForInstallMany adding bluebird@^2.3.11 from sharp dependencies
+84 silly prepareForInstallMany adding color@^0.7.1 from sharp dependencies
+85 silly prepareForInstallMany adding nan@^1.4.1 from sharp dependencies
+86 silly prepareForInstallMany adding semver@^4.1.0 from sharp dependencies
+87 silly cache add args [ 'bluebird@^2.3.11', null ]
+88 verbose cache add spec bluebird@^2.3.11
+89 silly cache add args [ 'color@^0.7.1', null ]
+90 verbose cache add spec color@^0.7.1
+91 silly cache add parsed spec { raw: 'bluebird@^2.3.11',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'bluebird',
+91 silly cache add   rawSpec: '^2.3.11',
+91 silly cache add   spec: '>=2.3.11 <3.0.0',
+91 silly cache add   type: 'range' }
+92 verbose addNamed bluebird@>=2.3.11 <3.0.0
+93 silly addNamed semver.valid null
+94 silly addNamed semver.validRange >=2.3.11 <3.0.0
+95 silly addNameRange { name: 'bluebird', range: '>=2.3.11 <3.0.0', hasData: false }
+96 silly mapToRegistry name bluebird
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry uri https://registry.npmjs.org/bluebird
+100 verbose addNameRange registry:https://registry.npmjs.org/bluebird not in flight; fetching
+101 silly cache add parsed spec { raw: 'color@^0.7.1',
+101 silly cache add   scope: null,
+101 silly cache add   name: 'color',
+101 silly cache add   rawSpec: '^0.7.1',
+101 silly cache add   spec: '>=0.7.1 <0.8.0',
+101 silly cache add   type: 'range' }
+102 verbose addNamed color@>=0.7.1 <0.8.0
+103 silly addNamed semver.valid null
+104 silly addNamed semver.validRange >=0.7.1 <0.8.0
+105 silly addNameRange { name: 'color', range: '>=0.7.1 <0.8.0', hasData: false }
+106 silly mapToRegistry name color
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry https://registry.npmjs.org/
+109 silly mapToRegistry uri https://registry.npmjs.org/color
+110 verbose addNameRange registry:https://registry.npmjs.org/color not in flight; fetching
+111 silly cache add args [ 'nan@^1.4.1', null ]
+112 verbose cache add spec nan@^1.4.1
+113 silly cache add parsed spec { raw: 'nan@^1.4.1',
+113 silly cache add   scope: null,
+113 silly cache add   name: 'nan',
+113 silly cache add   rawSpec: '^1.4.1',
+113 silly cache add   spec: '>=1.4.1 <2.0.0',
+113 silly cache add   type: 'range' }
+114 verbose addNamed nan@>=1.4.1 <2.0.0
+115 silly addNamed semver.valid null
+116 silly addNamed semver.validRange >=1.4.1 <2.0.0
+117 silly addNameRange { name: 'nan', range: '>=1.4.1 <2.0.0', hasData: false }
+118 silly mapToRegistry name nan
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry https://registry.npmjs.org/
+121 silly mapToRegistry uri https://registry.npmjs.org/nan
+122 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+123 silly cache add args [ 'semver@^4.1.0', null ]
+124 verbose cache add spec semver@^4.1.0
+125 silly cache add parsed spec { raw: 'semver@^4.1.0',
+125 silly cache add   scope: null,
+125 silly cache add   name: 'semver',
+125 silly cache add   rawSpec: '^4.1.0',
+125 silly cache add   spec: '>=4.1.0 <5.0.0',
+125 silly cache add   type: 'range' }
+126 verbose addNamed semver@>=4.1.0 <5.0.0
+127 silly addNamed semver.valid null
+128 silly addNamed semver.validRange >=4.1.0 <5.0.0
+129 silly addNameRange { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: false }
+130 silly mapToRegistry name semver
+131 silly mapToRegistry using default registry
+132 silly mapToRegistry registry https://registry.npmjs.org/
+133 silly mapToRegistry uri https://registry.npmjs.org/semver
+134 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+135 verbose request uri https://registry.npmjs.org/color
+136 verbose request no auth needed
+137 info attempt registry request try #1 at 00:16:41
+138 verbose etag "2RFECMLYSRS3GAAGGQQCQJJA1"
+139 http request GET https://registry.npmjs.org/color
+140 verbose request uri https://registry.npmjs.org/nan
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 00:16:41
+143 verbose etag "BASL4AHUZL2X9BYWJN23MGK84"
+144 http request GET https://registry.npmjs.org/nan
+145 verbose request uri https://registry.npmjs.org/bluebird
+146 verbose request no auth needed
+147 info attempt registry request try #1 at 00:16:41
+148 verbose etag "7KWSFH8VZGUBMD0SYII3FY632"
+149 http request GET https://registry.npmjs.org/bluebird
+150 verbose request uri https://registry.npmjs.org/semver
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 00:16:41
+153 verbose etag "AQLQ3A8CCL2VZ1C1UBYYZ15GT"
+154 http request GET https://registry.npmjs.org/semver
+155 http 304 https://registry.npmjs.org/nan
+156 silly get cb [ 304,
+156 silly get   { date: 'Thu, 11 Dec 2014 16:16:41 GMT',
+156 silly get     server: 'Apache',
+156 silly get     via: '1.1 varnish',
+156 silly get     'last-modified': 'Thu, 11 Dec 2014 16:14:39 GMT',
+156 silly get     'cache-control': 'max-age=60',
+156 silly get     etag: '"BASL4AHUZL2X9BYWJN23MGK84"',
+156 silly get     age: '56',
+156 silly get     'x-served-by': 'cache-ty67-TYO',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '3',
+156 silly get     'x-timer': 'S1418314601.832018,VS0,VE0',
+156 silly get     vary: 'Accept',
+156 silly get     'content-length': '0',
+156 silly get     'keep-alive': 'timeout=10, max=50',
+156 silly get     connection: 'Keep-Alive' } ]
+157 verbose etag https://registry.npmjs.org/nan from cache
+158 http 304 https://registry.npmjs.org/semver
+159 silly get cb [ 304,
+159 silly get   { date: 'Thu, 11 Dec 2014 16:16:41 GMT',
+159 silly get     server: 'Apache',
+159 silly get     via: '1.1 varnish',
+159 silly get     'last-modified': 'Thu, 11 Dec 2014 16:13:15 GMT',
+159 silly get     'cache-control': 'max-age=60',
+159 silly get     etag: '"AQLQ3A8CCL2VZ1C1UBYYZ15GT"',
+159 silly get     age: '5',
+159 silly get     'x-served-by': 'cache-ty66-TYO',
+159 silly get     'x-cache': 'HIT',
+159 silly get     'x-cache-hits': '14',
+159 silly get     'x-timer': 'S1418314601.826888,VS0,VE0',
+159 silly get     vary: 'Accept',
+159 silly get     'content-length': '0',
+159 silly get     'keep-alive': 'timeout=10, max=50',
+159 silly get     connection: 'Keep-Alive' } ]
+160 verbose etag https://registry.npmjs.org/semver from cache
+161 http 304 https://registry.npmjs.org/bluebird
+162 silly get cb [ 304,
+162 silly get   { date: 'Thu, 11 Dec 2014 16:16:41 GMT',
+162 silly get     server: 'Apache',
+162 silly get     via: '1.1 varnish',
+162 silly get     'last-modified': 'Thu, 11 Dec 2014 16:16:26 GMT',
+162 silly get     'cache-control': 'max-age=60',
+162 silly get     etag: '"7KWSFH8VZGUBMD0SYII3FY632"',
+162 silly get     age: '16',
+162 silly get     'x-served-by': 'cache-ty66-TYO',
+162 silly get     'x-cache': 'HIT',
+162 silly get     'x-cache-hits': '2',
+162 silly get     'x-timer': 'S1418314601.826995,VS0,VE0',
+162 silly get     vary: 'Accept',
+162 silly get     'content-length': '0',
+162 silly get     'keep-alive': 'timeout=10, max=50',
+162 silly get     connection: 'Keep-Alive' } ]
+163 verbose etag https://registry.npmjs.org/bluebird from cache
+164 silly addNameRange number 2 { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: true }
+165 silly addNameRange versions [ 'semver',
+165 silly addNameRange   [ '1.0.0',
+165 silly addNameRange     '1.0.1',
+165 silly addNameRange     '1.0.2',
+165 silly addNameRange     '1.0.3',
+165 silly addNameRange     '1.0.4',
+165 silly addNameRange     '1.0.5',
+165 silly addNameRange     '1.0.6',
+165 silly addNameRange     '1.0.7',
+165 silly addNameRange     '1.0.8',
+165 silly addNameRange     '1.0.9',
+165 silly addNameRange     '1.0.10',
+165 silly addNameRange     '1.0.11',
+165 silly addNameRange     '1.0.12',
+165 silly addNameRange     '1.0.13',
+165 silly addNameRange     '1.0.14',
+165 silly addNameRange     '1.1.0',
+165 silly addNameRange     '1.1.1',
+165 silly addNameRange     '1.1.2',
+165 silly addNameRange     '1.1.3',
+165 silly addNameRange     '1.1.4',
+165 silly addNameRange     '2.0.0-alpha',
+165 silly addNameRange     '2.0.0-beta',
+165 silly addNameRange     '2.0.1',
+165 silly addNameRange     '2.0.2',
+165 silly addNameRange     '2.0.3',
+165 silly addNameRange     '2.0.4',
+165 silly addNameRange     '2.0.5',
+165 silly addNameRange     '2.0.6',
+165 silly addNameRange     '2.0.7',
+165 silly addNameRange     '2.0.8',
+165 silly addNameRange     '2.0.9',
+165 silly addNameRange     '2.0.10',
+165 silly addNameRange     '2.0.11',
+165 silly addNameRange     '2.1.0',
+165 silly addNameRange     '2.2.0',
+165 silly addNameRange     '2.2.1',
+165 silly addNameRange     '2.3.0',
+165 silly addNameRange     '2.3.1',
+165 silly addNameRange     '2.3.2',
+165 silly addNameRange     '3.0.0',
+165 silly addNameRange     '3.0.1',
+165 silly addNameRange     '4.0.0',
+165 silly addNameRange     '4.0.2',
+165 silly addNameRange     '4.0.3',
+165 silly addNameRange     '4.1.0' ] ]
+166 verbose addNamed semver@4.1.0
+167 silly addNamed semver.valid 4.1.0
+168 silly addNamed semver.validRange 4.1.0
+169 silly addNameRange number 2 { name: 'nan', range: '>=1.4.1 <2.0.0', hasData: true }
+170 silly addNameRange versions [ 'nan',
+170 silly addNameRange   [ '0.3.0-wip',
+170 silly addNameRange     '0.3.0-wip2',
+170 silly addNameRange     '0.3.0',
+170 silly addNameRange     '0.3.1',
+170 silly addNameRange     '0.3.2',
+170 silly addNameRange     '0.4.0',
+170 silly addNameRange     '0.4.1',
+170 silly addNameRange     '0.4.2',
+170 silly addNameRange     '0.4.3',
+170 silly addNameRange     '0.4.4',
+170 silly addNameRange     '0.5.0',
+170 silly addNameRange     '0.5.1',
+170 silly addNameRange     '0.5.2',
+170 silly addNameRange     '0.6.0',
+170 silly addNameRange     '0.7.0',
+170 silly addNameRange     '0.7.1',
+170 silly addNameRange     '0.8.0',
+170 silly addNameRange     '1.0.0',
+170 silly addNameRange     '1.1.0',
+170 silly addNameRange     '1.1.1',
+170 silly addNameRange     '1.1.2',
+170 silly addNameRange     '1.2.0',
+170 silly addNameRange     '1.3.0',
+170 silly addNameRange     '1.4.0',
+170 silly addNameRange     '1.4.1' ] ]
+171 verbose addNamed nan@1.4.1
+172 silly addNamed semver.valid 1.4.1
+173 silly addNamed semver.validRange 1.4.1
+174 silly addNameRange number 2 { name: 'bluebird', range: '>=2.3.11 <3.0.0', hasData: true }
+175 silly addNameRange versions [ 'bluebird',
+175 silly addNameRange   [ '0.7.1-1',
+175 silly addNameRange     '0.7.1-2',
+175 silly addNameRange     '0.7.1-3',
+175 silly addNameRange     '0.7.1-4',
+175 silly addNameRange     '0.7.1-5',
+175 silly addNameRange     '0.7.2-0',
+175 silly addNameRange     '0.7.3-0',
+175 silly addNameRange     '0.7.4-0',
+175 silly addNameRange     '0.7.4-1',
+175 silly addNameRange     '0.7.5-0',
+175 silly addNameRange     '0.7.6-0',
+175 silly addNameRange     '0.7.7-0',
+175 silly addNameRange     '0.7.7-1',
+175 silly addNameRange     '0.7.8-0',
+175 silly addNameRange     '0.7.8-1',
+175 silly addNameRange     '0.7.9-0',
+175 silly addNameRange     '0.7.9-1',
+175 silly addNameRange     '0.7.10-0',
+175 silly addNameRange     '0.7.10-1',
+175 silly addNameRange     '0.7.11-0',
+175 silly addNameRange     '0.7.12-0',
+175 silly addNameRange     '0.7.12-1',
+175 silly addNameRange     '0.7.12-2',
+175 silly addNameRange     '0.8.0-0',
+175 silly addNameRange     '0.8.0-1',
+175 silly addNameRange     '0.8.0-2',
+175 silly addNameRange     '0.8.0-3',
+175 silly addNameRange     '0.8.1-0',
+175 silly addNameRange     '0.8.2-0',
+175 silly addNameRange     '0.8.2-1',
+175 silly addNameRange     '0.8.2-2',
+175 silly addNameRange     '0.8.3-0',
+175 silly addNameRange     '0.8.3-1',
+175 silly addNameRange     '0.8.3-2',
+175 silly addNameRange     '0.8.3-3',
+175 silly addNameRange     '0.8.4-0',
+175 silly addNameRange     '0.8.4-1',
+175 silly addNameRange     '0.8.5-0',
+175 silly addNameRange     '0.8.5-1',
+175 silly addNameRange     '0.9.0-0',
+175 silly addNameRange     '0.9.1-0',
+175 silly addNameRange     '0.9.1-1',
+175 silly addNameRange     '0.9.2-0',
+175 silly addNameRange     '0.9.2-1',
+175 silly addNameRange     '0.9.3-0',
+175 silly addNameRange     '0.9.4-0',
+175 silly addNameRange     '0.9.4-1',
+175 silly addNameRange     '0.9.5-0',
+175 silly addNameRange     '0.9.6-0',
+175 silly addNameRange     '0.9.7-0',
+175 silly addNameRange     '0.9.8-0',
+175 silly addNameRange     '0.9.9-0',
+175 silly addNameRange     '0.9.10-0',
+175 silly addNameRange     '0.9.10-1',
+175 silly addNameRange     '0.9.11-0',
+175 silly addNameRange     '0.9.11-1',
+175 silly addNameRange     '0.10.0-0',
+175 silly addNameRange     '0.10.0-1',
+175 silly addNameRange     '0.10.1-0',
+175 silly addNameRange     '0.10.2-0',
+175 silly addNameRange     '0.10.2-1',
+175 silly addNameRange     '0.10.3-0',
+175 silly addNameRange     '0.10.4-0',
+175 silly addNameRange     '0.10.4-1',
+175 silly addNameRange     '0.10.5-0',
+175 silly addNameRange     '0.10.6-0',
+175 silly addNameRange     '0.10.7-0',
+175 silly addNameRange     '0.10.8-0',
+175 silly addNameRange     '0.10.9-0',
+175 silly addNameRange     '0.10.9-1',
+175 silly addNameRange     '0.10.10-0',
+175 silly addNameRange     '0.10.11-0',
+175 silly addNameRange     '0.10.11-1',
+175 silly addNameRange     '0.10.11-2',
+175 silly addNameRange     '0.10.11-4',
+175 silly addNameRange     '0.10.12-0',
+175 silly addNameRange     '0.10.13-0',
+175 silly addNameRange     '0.10.13-1',
+175 silly addNameRange     '0.10.14-0',
+175 silly addNameRange     '0.11.0-0',
+175 silly addNameRange     '0.11.1-0',
+175 silly addNameRange     '0.11.2-0',
+175 silly addNameRange     '0.11.3-0',
+175 silly addNameRange     '0.11.4-0',
+175 silly addNameRange     '0.11.4-1',
+175 silly addNameRange     '0.11.5-0',
+175 silly addNameRange     '0.11.5-1',
+175 silly addNameRange     '0.11.6-0',
+175 silly addNameRange     '1.0.0',
+175 silly addNameRange     '1.0.1',
+175 silly addNameRange     '1.0.2',
+175 silly addNameRange     '1.0.3',
+175 silly addNameRange     '1.0.4',
+175 silly addNameRange     '1.0.5',
+175 silly addNameRange     '1.0.7',
+175 silly addNameRange     '1.0.8',
+175 silly addNameRange     '1.1.0',
+175 silly addNameRange     '1.1.1',
+175 silly addNameRange     '1.2.0',
+175 silly addNameRange     '1.2.1',
+175 silly addNameRange     '1.2.2',
+175 silly addNameRange     '1.2.3',
+175 silly addNameRange     '1.2.4',
+175 silly addNameRange     '2.0.2',
+175 silly addNameRange     '2.0.3',
+175 silly addNameRange     '2.0.4',
+175 silly addNameRange     '2.0.5',
+175 silly addNameRange     '2.0.6',
+175 silly addNameRange     '2.0.7',
+175 silly addNameRange     '2.1.1',
+175 silly addNameRange     '2.1.2',
+175 silly addNameRange     '2.1.3',
+175 silly addNameRange     '2.2.0',
+175 silly addNameRange     '2.2.1',
+175 silly addNameRange     '2.2.2',
+175 silly addNameRange     '2.3.0',
+175 silly addNameRange     '2.3.1',
+175 silly addNameRange     '2.3.2',
+175 silly addNameRange     '2.3.3',
+175 silly addNameRange     '2.3.4',
+175 silly addNameRange     '2.3.5',
+175 silly addNameRange     '0.11.6',
+175 silly addNameRange     '2.3.6',
+175 silly addNameRange     '2.3.9',
+175 silly addNameRange     '2.3.10',
+175 silly addNameRange     '2.3.11' ] ]
+176 verbose addNamed bluebird@2.3.11
+177 silly addNamed semver.valid 2.3.11
+178 silly addNamed semver.validRange 2.3.11
+179 silly cache afterAdd semver@4.1.0
+180 verbose afterAdd /Users/TimLiu/.npm/semver/4.1.0/package/package.json not in flight; writing
+181 silly cache afterAdd nan@1.4.1
+182 verbose afterAdd /Users/TimLiu/.npm/nan/1.4.1/package/package.json not in flight; writing
+183 silly cache afterAdd bluebird@2.3.11
+184 verbose afterAdd /Users/TimLiu/.npm/bluebird/2.3.11/package/package.json not in flight; writing
+185 verbose afterAdd /Users/TimLiu/.npm/nan/1.4.1/package/package.json written
+186 verbose afterAdd /Users/TimLiu/.npm/semver/4.1.0/package/package.json written
+187 verbose afterAdd /Users/TimLiu/.npm/bluebird/2.3.11/package/package.json written
+188 http 304 https://registry.npmjs.org/color
+189 silly get cb [ 304,
+189 silly get   { date: 'Thu, 11 Dec 2014 16:16:41 GMT',
+189 silly get     server: 'Apache',
+189 silly get     via: '1.1 varnish',
+189 silly get     'last-modified': 'Thu, 11 Dec 2014 16:16:42 GMT',
+189 silly get     'cache-control': 'max-age=60',
+189 silly get     etag: '"2RFECMLYSRS3GAAGGQQCQJJA1"',
+189 silly get     age: '0',
+189 silly get     'x-served-by': 'cache-ty67-TYO',
+189 silly get     'x-cache': 'HIT',
+189 silly get     'x-cache-hits': '1',
+189 silly get     'x-timer': 'S1418314601.831937,VS0,VE513',
+189 silly get     vary: 'Accept',
+189 silly get     'content-length': '0',
+189 silly get     'keep-alive': 'timeout=10, max=50',
+189 silly get     connection: 'Keep-Alive' } ]
+190 verbose etag https://registry.npmjs.org/color from cache
+191 silly addNameRange number 2 { name: 'color', range: '>=0.7.1 <0.8.0', hasData: true }
+192 silly addNameRange versions [ 'color',
+192 silly addNameRange   [ '0.1.0',
+192 silly addNameRange     '0.1.1',
+192 silly addNameRange     '0.1.2',
+192 silly addNameRange     '0.1.3',
+192 silly addNameRange     '0.2.0',
+192 silly addNameRange     '0.3.0',
+192 silly addNameRange     '0.4.0',
+192 silly addNameRange     '0.4.1',
+192 silly addNameRange     '0.4.2',
+192 silly addNameRange     '0.4.3',
+192 silly addNameRange     '0.4.4',
+192 silly addNameRange     '0.5.0',
+192 silly addNameRange     '0.6.0',
+192 silly addNameRange     '0.7.0',
+192 silly addNameRange     '0.7.1',
+192 silly addNameRange     '0.7.2',
+192 silly addNameRange     '0.7.3' ] ]
+193 verbose addNamed color@0.7.3
+194 silly addNamed semver.valid 0.7.3
+195 silly addNamed semver.validRange 0.7.3
+196 silly cache afterAdd color@0.7.3
+197 verbose afterAdd /Users/TimLiu/.npm/color/0.7.3/package/package.json not in flight; writing
+198 verbose afterAdd /Users/TimLiu/.npm/color/0.7.3/package/package.json written
+199 silly install resolved [ { name: 'nan',
+199 silly install resolved     version: '1.4.1',
+199 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+199 silly install resolved     main: 'include_dirs.js',
+199 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+199 silly install resolved     scripts:
+199 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+199 silly install resolved        'rebuild-tests': 'node-gyp rebuild --directory test' },
+199 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+199 silly install resolved     devDependencies:
+199 silly install resolved      { bindings: '~1.2.1',
+199 silly install resolved        'node-gyp': '~1.0.2',
+199 silly install resolved        tap: '~0.4.13',
+199 silly install resolved        xtend: '~4.0.0' },
+199 silly install resolved     license: 'MIT',
+199 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+199 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+199 silly install resolved     _id: 'nan@1.4.1',
+199 silly install resolved     _shasum: '0a2bb562c558b440005b1f7eb8b31ccbdb565d5f',
+199 silly install resolved     _from: 'nan@>=1.4.1 <2.0.0',
+199 silly install resolved     _npmVersion: '1.4.9',
+199 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+199 silly install resolved     maintainers: [ [Object], [Object] ],
+199 silly install resolved     dist:
+199 silly install resolved      { shasum: '0a2bb562c558b440005b1f7eb8b31ccbdb565d5f',
+199 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.4.1.tgz' },
+199 silly install resolved     directories: {},
+199 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.4.1.tgz',
+199 silly install resolved     readme: 'ERROR: No README data found!' },
+199 silly install resolved   { name: 'semver',
+199 silly install resolved     version: '4.1.0',
+199 silly install resolved     description: 'The semantic version parser used by npm.',
+199 silly install resolved     main: 'semver.js',
+199 silly install resolved     browser: 'semver.browser.js',
+199 silly install resolved     min: 'semver.min.js',
+199 silly install resolved     scripts: { test: 'tap test/*.js', prepublish: 'make' },
+199 silly install resolved     devDependencies: { tap: '0.x >=0.0.4', 'uglify-js': '~2.3.6' },
+199 silly install resolved     license: 'BSD',
+199 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-semver.git' },
+199 silly install resolved     bin: { semver: './bin/semver' },
+199 silly install resolved     gitHead: 'f8db569b9fd00788d14064aaf81854ed81e1337a',
+199 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-semver/issues' },
+199 silly install resolved     homepage: 'https://github.com/isaacs/node-semver',
+199 silly install resolved     _id: 'semver@4.1.0',
+199 silly install resolved     _shasum: 'bc80a9ff68532814362cc3cfda3c7b75ed9c321c',
+199 silly install resolved     _from: 'semver@>=4.1.0 <5.0.0',
+199 silly install resolved     _npmVersion: '2.1.3',
+199 silly install resolved     _nodeVersion: '0.10.31',
+199 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+199 silly install resolved     maintainers: [ [Object], [Object] ],
+199 silly install resolved     dist:
+199 silly install resolved      { shasum: 'bc80a9ff68532814362cc3cfda3c7b75ed9c321c',
+199 silly install resolved        tarball: 'http://registry.npmjs.org/semver/-/semver-4.1.0.tgz' },
+199 silly install resolved     directories: {},
+199 silly install resolved     _resolved: 'https://registry.npmjs.org/semver/-/semver-4.1.0.tgz',
+199 silly install resolved     readme: 'ERROR: No README data found!' },
+199 silly install resolved   { name: 'bluebird',
+199 silly install resolved     description: 'Full featured Promises/A+ implementation with exceptionally good performance',
+199 silly install resolved     version: '2.3.11',
+199 silly install resolved     keywords:
+199 silly install resolved      [ 'promise',
+199 silly install resolved        'performance',
+199 silly install resolved        'promises',
+199 silly install resolved        'promises-a',
+199 silly install resolved        'promises-aplus',
+199 silly install resolved        'async',
+199 silly install resolved        'await',
+199 silly install resolved        'deferred',
+199 silly install resolved        'deferreds',
+199 silly install resolved        'future',
+199 silly install resolved        'flow control',
+199 silly install resolved        'dsl',
+199 silly install resolved        'fluent interface' ],
+199 silly install resolved     scripts: { test: 'grunt test', prepublish: 'grunt build' },
+199 silly install resolved     homepage: 'https://github.com/petkaantonov/bluebird',
+199 silly install resolved     repository:
+199 silly install resolved      { type: 'git',
+199 silly install resolved        url: 'git://github.com/petkaantonov/bluebird.git' },
+199 silly install resolved     bugs: { url: 'http://github.com/petkaantonov/bluebird/issues' },
+199 silly install resolved     license: 'MIT',
+199 silly install resolved     author:
+199 silly install resolved      { name: 'Petka Antonov',
+199 silly install resolved        email: 'petka_antonov@hotmail.com',
+199 silly install resolved        url: 'http://github.com/petkaantonov/' },
+199 silly install resolved     devDependencies:
+199 silly install resolved      { grunt: '~0.4.1',
+199 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+199 silly install resolved        'grunt-contrib-watch': 'latest',
+199 silly install resolved        'grunt-contrib-connect': 'latest',
+199 silly install resolved        'grunt-contrib-concat': 'latest',
+199 silly install resolved        'grunt-saucelabs': '~8.3.1',
+199 silly install resolved        acorn: '~0.6.0',
+199 silly install resolved        mocha: '~1.20.1',
+199 silly install resolved        q: '~1.0.1',
+199 silly install resolved        when: '~3.2.3',
+199 silly install resolved        deferred: '~0.7.1',
+199 silly install resolved        rsvp: '~3.0.9',
+199 silly install resolved        avow: '~2.0.1',
+199 silly install resolved        jsdom: '~0.11.0',
+199 silly install resolved        'jquery-browserify': '~1.8.1',
+199 silly install resolved        sinon: '~1.7.3',
+199 silly install resolved        kew: '~0.4.0',
+199 silly install resolved        browserify: '~4.2.0',
+199 silly install resolved        concurrent: '~0.3.2',
+199 silly install resolved        'text-table': '~0.2.0',
+199 silly install resolved        'grunt-cli': '~0.1.9',
+199 silly install resolved        'jshint-stylish': '~0.2.0',
+199 silly install resolved        'semver-utils': '~1.1.0',
+199 silly install resolved        rimraf: '~2.2.6',
+199 silly install resolved        mkdirp: '~0.5.0' },
+199 silly install resolved     main: './js/main/bluebird.js',
+199 silly install resolved     files: [ 'js/browser', 'js/main', 'js/zalgo', 'LICENSE', 'zalgo.js' ],
+199 silly install resolved     gitHead: 'bd97da362617dcc0a29b719e1bab3165353ef786',
+199 silly install resolved     _id: 'bluebird@2.3.11',
+199 silly install resolved     _shasum: '15bb78ed32abf27b090640c0f85e4b91f615c8b6',
+199 silly install resolved     _from: 'bluebird@>=2.3.11 <3.0.0',
+199 silly install resolved     _npmVersion: '1.4.21',
+199 silly install resolved     _npmUser: { name: 'esailija', email: 'petka_antonov@hotmail.com' },
+199 silly install resolved     maintainers: [ [Object] ],
+199 silly install resolved     dist:
+199 silly install resolved      { shasum: '15bb78ed32abf27b090640c0f85e4b91f615c8b6',
+199 silly install resolved        tarball: 'http://registry.npmjs.org/bluebird/-/bluebird-2.3.11.tgz' },
+199 silly install resolved     directories: {},
+199 silly install resolved     _resolved: 'https://registry.npmjs.org/bluebird/-/bluebird-2.3.11.tgz',
+199 silly install resolved     readme: 'ERROR: No README data found!' },
+199 silly install resolved   { name: 'color',
+199 silly install resolved     description: 'Color conversion and manipulation with CSS string support',
+199 silly install resolved     version: '0.7.3',
+199 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+199 silly install resolved     repository: { type: 'git', url: 'http://github.com/harthur/color.git' },
+199 silly install resolved     main: './color',
+199 silly install resolved     dependencies: { 'color-convert': '0.5.x', 'color-string': '0.2.x' },
+199 silly install resolved     devDependencies:
+199 silly install resolved      { nomnom: '~1.5.2',
+199 silly install resolved        browserify: '~2.18.1',
+199 silly install resolved        grunt: '~0.4.1',
+199 silly install resolved        'grunt-contrib-uglify': '~0.2.0' },
+199 silly install resolved     keywords: [ 'color', 'colour', 'css' ],
+199 silly install resolved     bugs: { url: 'https://github.com/harthur/color/issues' },
+199 silly install resolved     homepage: 'https://github.com/harthur/color',
+199 silly install resolved     _id: 'color@0.7.3',
+199 silly install resolved     dist:
+199 silly install resolved      { shasum: 'ab3ae4bc6cb8cfadb5d749c40f34aea088104f89',
+199 silly install resolved        tarball: 'http://registry.npmjs.org/color/-/color-0.7.3.tgz' },
+199 silly install resolved     _from: 'color@>=0.7.1 <0.8.0',
+199 silly install resolved     _npmVersion: '1.4.3',
+199 silly install resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
+199 silly install resolved     maintainers: [ [Object] ],
+199 silly install resolved     directories: {},
+199 silly install resolved     _shasum: 'ab3ae4bc6cb8cfadb5d749c40f34aea088104f89',
+199 silly install resolved     _resolved: 'https://registry.npmjs.org/color/-/color-0.7.3.tgz',
+199 silly install resolved     readme: 'ERROR: No README data found!' } ]
+200 info install nan@1.4.1 into /Users/TimLiu/node_modules/sharp
+201 info install semver@4.1.0 into /Users/TimLiu/node_modules/sharp
+202 info install bluebird@2.3.11 into /Users/TimLiu/node_modules/sharp
+203 info install color@0.7.3 into /Users/TimLiu/node_modules/sharp
+204 info installOne nan@1.4.1
+205 verbose installOne of nan to /Users/TimLiu/node_modules/sharp not in flight; installing
+206 info installOne semver@4.1.0
+207 verbose installOne of semver to /Users/TimLiu/node_modules/sharp not in flight; installing
+208 info installOne bluebird@2.3.11
+209 verbose installOne of bluebird to /Users/TimLiu/node_modules/sharp not in flight; installing
+210 info installOne color@0.7.3
+211 verbose installOne of color to /Users/TimLiu/node_modules/sharp not in flight; installing
+212 verbose lock using /Users/TimLiu/.npm/_locks/nan-e79ee30518d98a30.lock for /Users/TimLiu/node_modules/sharp/node_modules/nan
+213 verbose lock using /Users/TimLiu/.npm/_locks/semver-78bf62cdabe2a645.lock for /Users/TimLiu/node_modules/sharp/node_modules/semver
+214 silly install write writing nan 1.4.1 to /Users/TimLiu/node_modules/sharp/node_modules/nan
+215 silly cache addNamed cb nan@1.4.1
+216 verbose unbuild node_modules/sharp/node_modules/nan
+217 verbose lock using /Users/TimLiu/.npm/_locks/bluebird-fe0229a5fd2356fc.lock for /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+218 silly install write writing semver 4.1.0 to /Users/TimLiu/node_modules/sharp/node_modules/semver
+219 silly cache addNamed cb semver@4.1.0
+220 verbose unbuild node_modules/sharp/node_modules/semver
+221 verbose lock using /Users/TimLiu/.npm/_locks/color-2213b8b700413459.lock for /Users/TimLiu/node_modules/sharp/node_modules/color
+222 silly install write writing bluebird 2.3.11 to /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+223 silly cache addNamed cb bluebird@2.3.11
+224 verbose unbuild node_modules/sharp/node_modules/bluebird
+225 silly install write writing color 0.7.3 to /Users/TimLiu/node_modules/sharp/node_modules/color
+226 silly cache addNamed cb color@0.7.3
+227 verbose unbuild node_modules/sharp/node_modules/color
+228 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/nan
+229 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/semver
+230 verbose tar unpack /Users/TimLiu/.npm/nan/1.4.1/package.tgz
+231 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/nan
+232 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/nan
+233 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+234 verbose tar unpack /Users/TimLiu/.npm/semver/4.1.0/package.tgz
+235 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/semver
+236 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/semver
+237 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color
+238 silly gunzTarPerm modes [ '755', '644' ]
+239 verbose tar unpack /Users/TimLiu/.npm/bluebird/2.3.11/package.tgz
+240 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+241 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+242 silly gunzTarPerm modes [ '755', '644' ]
+243 verbose tar unpack /Users/TimLiu/.npm/color/0.7.3/package.tgz
+244 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/color
+245 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color
+246 silly gunzTarPerm modes [ '755', '644' ]
+247 silly gunzTarPerm modes [ '755', '644' ]
+248 silly gunzTarPerm extractEntry package.json
+249 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+250 silly gunzTarPerm extractEntry package.json
+251 silly gunzTarPerm extractEntry package.json
+252 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+253 silly gunzTarPerm extractEntry package.json
+254 silly gunzTarPerm extractEntry include_dirs.js
+255 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+256 silly gunzTarPerm extractEntry appveyor.yml
+257 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+258 silly gunzTarPerm extractEntry .npmignore
+259 silly gunzTarPerm extractEntry README.md
+260 silly gunzTarPerm extractEntry README.md
+261 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+262 silly gunzTarPerm extractEntry README.md
+263 silly gunzTarPerm extractEntry LICENSE
+264 silly gunzTarPerm extractEntry LICENSE
+265 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+266 silly gunzTarPerm extractEntry CHANGELOG.md
+267 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+268 silly gunzTarPerm extractEntry LICENSE.md
+269 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+270 silly gunzTarPerm extractEntry LICENSE
+271 silly gunzTarPerm extractEntry semver.browser.js
+272 silly gunzTarPerm extractEntry Gruntfile.js
+273 silly gunzTarPerm extractEntry browser.js
+274 silly gunzTarPerm extractEntry js/browser/bluebird.js
+275 silly gunzTarPerm modified mode [ 'js/browser/bluebird.js', 436, 420 ]
+276 silly gunzTarPerm extractEntry js/main/any.js
+277 silly gunzTarPerm modified mode [ 'js/main/any.js', 436, 420 ]
+278 silly gunzTarPerm extractEntry .nan.h.un~
+279 silly gunzTarPerm modified mode [ '.nan.h.un~', 436, 420 ]
+280 silly gunzTarPerm extractEntry build/config.gypi
+281 silly gunzTarPerm modified mode [ 'build/config.gypi', 436, 420 ]
+282 silly gunzTarPerm extractEntry .dntrc
+283 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+284 silly gunzTarPerm extractEntry nan.h
+285 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+286 silly gunzTarPerm extractEntry nan.h.orig
+287 silly gunzTarPerm modified mode [ 'nan.h.orig', 436, 420 ]
+288 silly gunzTarPerm extractEntry semver.js
+289 silly gunzTarPerm extractEntry color-0.4.1.js
+290 silly gunzTarPerm extractEntry color-0.4.1.min.js
+291 silly gunzTarPerm extractEntry color.js
+292 silly gunzTarPerm extractEntry test.js
+293 silly gunzTarPerm extractEntry color-test.js
+294 silly gunzTarPerm extractEntry component.json
+295 silly gunzTarPerm extractEntry bower.json
+296 silly gunzTarPerm extractEntry test/all.js
+297 silly gunzTarPerm extractEntry test/basic.js
+298 silly gunzTarPerm extractEntry test/speed.js
+299 silly gunzTarPerm extractEntry test.diff
+300 silly gunzTarPerm extractEntry test.html
+301 silly gunzTarPerm extractEntry js/main/finally.js
+302 silly gunzTarPerm modified mode [ 'js/main/finally.js', 436, 420 ]
+303 silly gunzTarPerm extractEntry semver.min.js
+304 silly gunzTarPerm extractEntry Makefile
+305 silly gunzTarPerm extractEntry test/amd.js
+306 silly gunzTarPerm extractEntry test/clean.js
+307 silly gunzTarPerm extractEntry test/gtr.js
+308 silly gunzTarPerm extractEntry js/main/generators.js
+309 silly gunzTarPerm modified mode [ 'js/main/generators.js', 436, 420 ]
+310 silly gunzTarPerm extractEntry js/main/join.js
+311 silly gunzTarPerm modified mode [ 'js/main/join.js', 436, 420 ]
+312 silly gunzTarPerm extractEntry js/main/map.js
+313 silly gunzTarPerm modified mode [ 'js/main/map.js', 436, 420 ]
+314 silly gunzTarPerm extractEntry js/main/filter.js
+315 silly gunzTarPerm modified mode [ 'js/main/filter.js', 436, 420 ]
+316 silly gunzTarPerm extractEntry js/main/progress.js
+317 silly gunzTarPerm modified mode [ 'js/main/progress.js', 436, 420 ]
+318 silly gunzTarPerm extractEntry test/index.js
+319 silly gunzTarPerm extractEntry js/main/promise.js
+320 silly gunzTarPerm modified mode [ 'js/main/promise.js', 436, 420 ]
+321 silly gunzTarPerm extractEntry test/ltr.js
+322 silly gunzTarPerm extractEntry test/no-module.js
+323 silly gunzTarPerm extractEntry bin/semver
+324 silly gunzTarPerm extractEntry js/main/promise_array.js
+325 silly gunzTarPerm modified mode [ 'js/main/promise_array.js', 436, 420 ]
+326 silly gunzTarPerm extractEntry semver.browser.js.gz
+327 silly gunzTarPerm extractEntry js/main/promise_resolver.js
+328 silly gunzTarPerm modified mode [ 'js/main/promise_resolver.js', 436, 420 ]
+329 silly gunzTarPerm extractEntry foot.js.txt
+330 silly gunzTarPerm extractEntry head.js.txt
+331 silly gunzTarPerm extractEntry js/main/promisify.js
+332 silly gunzTarPerm modified mode [ 'js/main/promisify.js', 436, 420 ]
+333 silly gunzTarPerm extractEntry semver.min.js.gz
+334 silly gunzTarPerm extractEntry js/main/es5.js
+335 silly gunzTarPerm modified mode [ 'js/main/es5.js', 436, 420 ]
+336 silly gunzTarPerm extractEntry js/main/props.js
+337 silly gunzTarPerm modified mode [ 'js/main/props.js', 436, 420 ]
+338 silly gunzTarPerm extractEntry js/main/errors_api_rejection.js
+339 silly gunzTarPerm modified mode [ 'js/main/errors_api_rejection.js', 436, 420 ]
+340 silly gunzTarPerm extractEntry js/main/queue.js
+341 silly gunzTarPerm modified mode [ 'js/main/queue.js', 436, 420 ]
+342 silly gunzTarPerm extractEntry js/main/errors.js
+343 silly gunzTarPerm modified mode [ 'js/main/errors.js', 436, 420 ]
+344 info preinstall color@0.7.3
+345 silly prepareForInstallMany adding color-convert@0.5.x from color dependencies
+346 silly prepareForInstallMany adding color-string@0.2.x from color dependencies
+347 silly cache add args [ 'color-string@0.2.x', null ]
+348 verbose cache add spec color-string@0.2.x
+349 silly cache add parsed spec { raw: 'color-string@0.2.x',
+349 silly cache add   scope: null,
+349 silly cache add   name: 'color-string',
+349 silly cache add   rawSpec: '0.2.x',
+349 silly cache add   spec: '>=0.2.0 <0.3.0',
+349 silly cache add   type: 'range' }
+350 verbose addNamed color-string@>=0.2.0 <0.3.0
+351 silly addNamed semver.valid null
+352 silly addNamed semver.validRange >=0.2.0 <0.3.0
+353 silly addNameRange { name: 'color-string', range: '>=0.2.0 <0.3.0', hasData: false }
+354 silly mapToRegistry name color-string
+355 silly mapToRegistry using default registry
+356 silly mapToRegistry registry https://registry.npmjs.org/
+357 silly mapToRegistry uri https://registry.npmjs.org/color-string
+358 verbose addNameRange registry:https://registry.npmjs.org/color-string not in flight; fetching
+359 silly cache add args [ 'color-convert@0.5.x', null ]
+360 verbose cache add spec color-convert@0.5.x
+361 silly cache add parsed spec { raw: 'color-convert@0.5.x',
+361 silly cache add   scope: null,
+361 silly cache add   name: 'color-convert',
+361 silly cache add   rawSpec: '0.5.x',
+361 silly cache add   spec: '>=0.5.0 <0.6.0',
+361 silly cache add   type: 'range' }
+362 verbose addNamed color-convert@>=0.5.0 <0.6.0
+363 silly addNamed semver.valid null
+364 silly addNamed semver.validRange >=0.5.0 <0.6.0
+365 silly addNameRange { name: 'color-convert',
+365 silly addNameRange   range: '>=0.5.0 <0.6.0',
+365 silly addNameRange   hasData: false }
+366 silly mapToRegistry name color-convert
+367 silly mapToRegistry using default registry
+368 silly mapToRegistry registry https://registry.npmjs.org/
+369 silly mapToRegistry uri https://registry.npmjs.org/color-convert
+370 verbose addNameRange registry:https://registry.npmjs.org/color-convert not in flight; fetching
+371 verbose request uri https://registry.npmjs.org/color-string
+372 verbose request no auth needed
+373 info attempt registry request try #1 at 00:16:42
+374 verbose etag "3HGTOYIARORG97995ZAHMDL1W"
+375 http request GET https://registry.npmjs.org/color-string
+376 verbose request uri https://registry.npmjs.org/color-convert
+377 verbose request no auth needed
+378 info attempt registry request try #1 at 00:16:42
+379 verbose etag "CUVQQEOJBZE5CSI1IFSSFSCBI"
+380 http request GET https://registry.npmjs.org/color-convert
+381 info preinstall semver@4.1.0
+382 silly install resolved []
+383 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/semver
+384 info build /Users/TimLiu/node_modules/sharp/node_modules/semver
+385 verbose linkStuff [ false,
+385 verbose linkStuff   false,
+385 verbose linkStuff   false,
+385 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules' ]
+386 info linkStuff semver@4.1.0
+387 verbose linkBins semver@4.1.0
+388 verbose link bins [ { semver: './bin/semver' },
+388 verbose link bins   '/Users/TimLiu/node_modules/sharp/node_modules/.bin',
+388 verbose link bins   false ]
+389 verbose linkMans semver@4.1.0
+390 verbose rebuildBundles semver@4.1.0
+391 silly gunzTarPerm extractEntry js/main/race.js
+392 silly gunzTarPerm modified mode [ 'js/main/race.js', 436, 420 ]
+393 silly gunzTarPerm extractEntry js/main/each.js
+394 silly gunzTarPerm modified mode [ 'js/main/each.js', 436, 420 ]
+395 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/.bin/semver
+396 info install semver@4.1.0
+397 info postinstall semver@4.1.0
+398 verbose unlock done using /Users/TimLiu/.npm/_locks/semver-78bf62cdabe2a645.lock for /Users/TimLiu/node_modules/sharp/node_modules/semver
+399 silly gunzTarPerm extractEntry js/main/reduce.js
+400 silly gunzTarPerm modified mode [ 'js/main/reduce.js', 436, 420 ]
+401 silly gunzTarPerm extractEntry js/main/direct_resolve.js
+402 silly gunzTarPerm modified mode [ 'js/main/direct_resolve.js', 436, 420 ]
+403 silly gunzTarPerm extractEntry js/main/schedule.js
+404 silly gunzTarPerm modified mode [ 'js/main/schedule.js', 436, 420 ]
+405 silly gunzTarPerm extractEntry js/main/catch_filter.js
+406 silly gunzTarPerm modified mode [ 'js/main/catch_filter.js', 436, 420 ]
+407 silly gunzTarPerm extractEntry js/main/settle.js
+408 silly gunzTarPerm modified mode [ 'js/main/settle.js', 436, 420 ]
+409 silly gunzTarPerm extractEntry js/main/captured_trace.js
+410 silly gunzTarPerm modified mode [ 'js/main/captured_trace.js', 436, 420 ]
+411 silly gunzTarPerm extractEntry js/main/some.js
+412 silly gunzTarPerm modified mode [ 'js/main/some.js', 436, 420 ]
+413 silly gunzTarPerm extractEntry js/main/cancel.js
+414 silly gunzTarPerm modified mode [ 'js/main/cancel.js', 436, 420 ]
+415 silly gunzTarPerm extractEntry js/main/synchronous_inspection.js
+416 silly gunzTarPerm modified mode [ 'js/main/synchronous_inspection.js', 436, 420 ]
+417 silly gunzTarPerm extractEntry js/main/call_get.js
+418 silly gunzTarPerm modified mode [ 'js/main/call_get.js', 436, 420 ]
+419 silly gunzTarPerm extractEntry js/main/thenables.js
+420 silly gunzTarPerm modified mode [ 'js/main/thenables.js', 436, 420 ]
+421 silly gunzTarPerm extractEntry js/main/bluebird.js
+422 silly gunzTarPerm modified mode [ 'js/main/bluebird.js', 436, 420 ]
+423 info preinstall nan@1.4.1
+424 silly install resolved []
+425 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/nan
+426 info build /Users/TimLiu/node_modules/sharp/node_modules/nan
+427 verbose linkStuff [ false,
+427 verbose linkStuff   false,
+427 verbose linkStuff   false,
+427 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules' ]
+428 info linkStuff nan@1.4.1
+429 verbose linkBins nan@1.4.1
+430 verbose linkMans nan@1.4.1
+431 verbose rebuildBundles nan@1.4.1
+432 info install nan@1.4.1
+433 info postinstall nan@1.4.1
+434 silly gunzTarPerm extractEntry js/main/timers.js
+435 silly gunzTarPerm modified mode [ 'js/main/timers.js', 436, 420 ]
+436 silly gunzTarPerm extractEntry js/main/async.js
+437 silly gunzTarPerm modified mode [ 'js/main/async.js', 436, 420 ]
+438 silly gunzTarPerm extractEntry js/main/using.js
+439 silly gunzTarPerm modified mode [ 'js/main/using.js', 436, 420 ]
+440 verbose unlock done using /Users/TimLiu/.npm/_locks/nan-e79ee30518d98a30.lock for /Users/TimLiu/node_modules/sharp/node_modules/nan
+441 silly gunzTarPerm extractEntry js/main/assert.js
+442 silly gunzTarPerm modified mode [ 'js/main/assert.js', 436, 420 ]
+443 silly gunzTarPerm extractEntry js/main/util.js
+444 silly gunzTarPerm modified mode [ 'js/main/util.js', 436, 420 ]
+445 silly gunzTarPerm extractEntry js/main/nodeify.js
+446 silly gunzTarPerm modified mode [ 'js/main/nodeify.js', 436, 420 ]
+447 silly gunzTarPerm extractEntry js/zalgo/any.js
+448 silly gunzTarPerm modified mode [ 'js/zalgo/any.js', 436, 420 ]
+449 silly gunzTarPerm extractEntry js/zalgo/finally.js
+450 silly gunzTarPerm modified mode [ 'js/zalgo/finally.js', 436, 420 ]
+451 silly gunzTarPerm extractEntry js/zalgo/generators.js
+452 silly gunzTarPerm modified mode [ 'js/zalgo/generators.js', 436, 420 ]
+453 silly gunzTarPerm extractEntry js/zalgo/join.js
+454 silly gunzTarPerm modified mode [ 'js/zalgo/join.js', 436, 420 ]
+455 silly gunzTarPerm extractEntry js/zalgo/map.js
+456 silly gunzTarPerm modified mode [ 'js/zalgo/map.js', 436, 420 ]
+457 silly gunzTarPerm extractEntry js/zalgo/filter.js
+458 silly gunzTarPerm modified mode [ 'js/zalgo/filter.js', 436, 420 ]
+459 silly gunzTarPerm extractEntry js/zalgo/progress.js
+460 silly gunzTarPerm modified mode [ 'js/zalgo/progress.js', 436, 420 ]
+461 silly gunzTarPerm extractEntry js/zalgo/promise.js
+462 silly gunzTarPerm modified mode [ 'js/zalgo/promise.js', 436, 420 ]
+463 silly gunzTarPerm extractEntry js/zalgo/promise_array.js
+464 silly gunzTarPerm modified mode [ 'js/zalgo/promise_array.js', 436, 420 ]
+465 silly gunzTarPerm extractEntry js/zalgo/promise_resolver.js
+466 silly gunzTarPerm modified mode [ 'js/zalgo/promise_resolver.js', 436, 420 ]
+467 silly gunzTarPerm extractEntry js/zalgo/promisify.js
+468 silly gunzTarPerm modified mode [ 'js/zalgo/promisify.js', 436, 420 ]
+469 silly gunzTarPerm extractEntry js/zalgo/es5.js
+470 silly gunzTarPerm modified mode [ 'js/zalgo/es5.js', 436, 420 ]
+471 silly gunzTarPerm extractEntry js/zalgo/props.js
+472 silly gunzTarPerm modified mode [ 'js/zalgo/props.js', 436, 420 ]
+473 silly gunzTarPerm extractEntry js/zalgo/errors_api_rejection.js
+474 silly gunzTarPerm modified mode [ 'js/zalgo/errors_api_rejection.js', 436, 420 ]
+475 silly gunzTarPerm extractEntry js/zalgo/queue.js
+476 silly gunzTarPerm modified mode [ 'js/zalgo/queue.js', 436, 420 ]
+477 silly gunzTarPerm extractEntry js/zalgo/errors.js
+478 silly gunzTarPerm modified mode [ 'js/zalgo/errors.js', 436, 420 ]
+479 silly gunzTarPerm extractEntry js/zalgo/race.js
+480 silly gunzTarPerm modified mode [ 'js/zalgo/race.js', 436, 420 ]
+481 silly gunzTarPerm extractEntry js/zalgo/each.js
+482 silly gunzTarPerm modified mode [ 'js/zalgo/each.js', 436, 420 ]
+483 silly gunzTarPerm extractEntry js/zalgo/reduce.js
+484 silly gunzTarPerm modified mode [ 'js/zalgo/reduce.js', 436, 420 ]
+485 silly gunzTarPerm extractEntry js/zalgo/direct_resolve.js
+486 silly gunzTarPerm modified mode [ 'js/zalgo/direct_resolve.js', 436, 420 ]
+487 silly gunzTarPerm extractEntry js/zalgo/schedule.js
+488 silly gunzTarPerm modified mode [ 'js/zalgo/schedule.js', 436, 420 ]
+489 silly gunzTarPerm extractEntry js/zalgo/catch_filter.js
+490 silly gunzTarPerm modified mode [ 'js/zalgo/catch_filter.js', 436, 420 ]
+491 silly gunzTarPerm extractEntry js/zalgo/settle.js
+492 silly gunzTarPerm modified mode [ 'js/zalgo/settle.js', 436, 420 ]
+493 silly gunzTarPerm extractEntry js/zalgo/captured_trace.js
+494 silly gunzTarPerm modified mode [ 'js/zalgo/captured_trace.js', 436, 420 ]
+495 silly gunzTarPerm extractEntry js/zalgo/some.js
+496 silly gunzTarPerm modified mode [ 'js/zalgo/some.js', 436, 420 ]
+497 silly gunzTarPerm extractEntry js/zalgo/cancel.js
+498 silly gunzTarPerm modified mode [ 'js/zalgo/cancel.js', 436, 420 ]
+499 silly gunzTarPerm extractEntry js/zalgo/synchronous_inspection.js
+500 silly gunzTarPerm modified mode [ 'js/zalgo/synchronous_inspection.js', 436, 420 ]
+501 silly gunzTarPerm extractEntry js/zalgo/call_get.js
+502 silly gunzTarPerm modified mode [ 'js/zalgo/call_get.js', 436, 420 ]
+503 silly gunzTarPerm extractEntry js/zalgo/thenables.js
+504 silly gunzTarPerm modified mode [ 'js/zalgo/thenables.js', 436, 420 ]
+505 silly gunzTarPerm extractEntry js/zalgo/bluebird.js
+506 silly gunzTarPerm modified mode [ 'js/zalgo/bluebird.js', 436, 420 ]
+507 silly gunzTarPerm extractEntry js/zalgo/timers.js
+508 silly gunzTarPerm modified mode [ 'js/zalgo/timers.js', 436, 420 ]
+509 silly gunzTarPerm extractEntry js/zalgo/async.js
+510 silly gunzTarPerm modified mode [ 'js/zalgo/async.js', 436, 420 ]
+511 silly gunzTarPerm extractEntry js/zalgo/using.js
+512 silly gunzTarPerm modified mode [ 'js/zalgo/using.js', 436, 420 ]
+513 silly gunzTarPerm extractEntry js/zalgo/assert.js
+514 silly gunzTarPerm modified mode [ 'js/zalgo/assert.js', 436, 420 ]
+515 silly gunzTarPerm extractEntry js/zalgo/util.js
+516 silly gunzTarPerm modified mode [ 'js/zalgo/util.js', 436, 420 ]
+517 silly gunzTarPerm extractEntry js/zalgo/nodeify.js
+518 silly gunzTarPerm modified mode [ 'js/zalgo/nodeify.js', 436, 420 ]
+519 info preinstall bluebird@2.3.11
+520 silly install resolved []
+521 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+522 info build /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+523 verbose linkStuff [ false,
+523 verbose linkStuff   false,
+523 verbose linkStuff   false,
+523 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules' ]
+524 info linkStuff bluebird@2.3.11
+525 verbose linkBins bluebird@2.3.11
+526 verbose linkMans bluebird@2.3.11
+527 verbose rebuildBundles bluebird@2.3.11
+528 info install bluebird@2.3.11
+529 info postinstall bluebird@2.3.11
+530 verbose unlock done using /Users/TimLiu/.npm/_locks/bluebird-fe0229a5fd2356fc.lock for /Users/TimLiu/node_modules/sharp/node_modules/bluebird
+531 http 304 https://registry.npmjs.org/color-convert
+532 silly get cb [ 304,
+532 silly get   { date: 'Thu, 11 Dec 2014 16:16:43 GMT',
+532 silly get     server: 'Apache',
+532 silly get     via: '1.1 varnish',
+532 silly get     'last-modified': 'Thu, 11 Dec 2014 16:16:43 GMT',
+532 silly get     'cache-control': 'max-age=60',
+532 silly get     etag: '"CUVQQEOJBZE5CSI1IFSSFSCBI"',
+532 silly get     age: '0',
+532 silly get     'x-served-by': 'cache-ty66-TYO',
+532 silly get     'x-cache': 'HIT',
+532 silly get     'x-cache-hits': '1',
+532 silly get     'x-timer': 'S1418314603.008875,VS0,VE115',
+532 silly get     vary: 'Accept',
+532 silly get     'content-length': '0',
+532 silly get     'keep-alive': 'timeout=10, max=50',
+532 silly get     connection: 'Keep-Alive' } ]
+533 verbose etag https://registry.npmjs.org/color-convert from cache
+534 silly addNameRange number 2 { name: 'color-convert', range: '>=0.5.0 <0.6.0', hasData: true }
+535 silly addNameRange versions [ 'color-convert',
+535 silly addNameRange   [ '0.1.0',
+535 silly addNameRange     '0.2.0',
+535 silly addNameRange     '0.2.1',
+535 silly addNameRange     '0.3.0',
+535 silly addNameRange     '0.3.1',
+535 silly addNameRange     '0.3.4',
+535 silly addNameRange     '0.4.0',
+535 silly addNameRange     '0.5.0',
+535 silly addNameRange     '0.5.1',
+535 silly addNameRange     '0.5.2' ] ]
+536 verbose addNamed color-convert@0.5.2
+537 silly addNamed semver.valid 0.5.2
+538 silly addNamed semver.validRange 0.5.2
+539 silly cache afterAdd color-convert@0.5.2
+540 verbose afterAdd /Users/TimLiu/.npm/color-convert/0.5.2/package/package.json not in flight; writing
+541 verbose afterAdd /Users/TimLiu/.npm/color-convert/0.5.2/package/package.json written
+542 http 304 https://registry.npmjs.org/color-string
+543 silly get cb [ 304,
+543 silly get   { date: 'Thu, 11 Dec 2014 16:16:42 GMT',
+543 silly get     server: 'Apache',
+543 silly get     via: '1.1 varnish',
+543 silly get     'last-modified': 'Thu, 11 Dec 2014 16:16:43 GMT',
+543 silly get     'cache-control': 'max-age=60',
+543 silly get     etag: '"3HGTOYIARORG97995ZAHMDL1W"',
+543 silly get     age: '0',
+543 silly get     'x-served-by': 'cache-ty68-TYO',
+543 silly get     'x-cache': 'HIT',
+543 silly get     'x-cache-hits': '1',
+543 silly get     'x-timer': 'S1418314602.999467,VS0,VE777',
+543 silly get     vary: 'Accept',
+543 silly get     'content-length': '0',
+543 silly get     'keep-alive': 'timeout=10, max=50',
+543 silly get     connection: 'Keep-Alive' } ]
+544 verbose etag https://registry.npmjs.org/color-string from cache
+545 silly addNameRange number 2 { name: 'color-string', range: '>=0.2.0 <0.3.0', hasData: true }
+546 silly addNameRange versions [ 'color-string',
+546 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.2.0', '0.2.1' ] ]
+547 verbose addNamed color-string@0.2.1
+548 silly addNamed semver.valid 0.2.1
+549 silly addNamed semver.validRange 0.2.1
+550 silly cache afterAdd color-string@0.2.1
+551 verbose afterAdd /Users/TimLiu/.npm/color-string/0.2.1/package/package.json not in flight; writing
+552 verbose afterAdd /Users/TimLiu/.npm/color-string/0.2.1/package/package.json written
+553 silly install resolved [ { name: 'color-convert',
+553 silly install resolved     description: 'Plain color conversion functions',
+553 silly install resolved     version: '0.5.2',
+553 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+553 silly install resolved     repository:
+553 silly install resolved      { type: 'git',
+553 silly install resolved        url: 'http://github.com/harthur/color-convert.git' },
+553 silly install resolved     main: './index',
+553 silly install resolved     devDependencies:
+553 silly install resolved      { browserify: '^6.1.0',
+553 silly install resolved        'uglify-js': '1.0.x',
+553 silly install resolved        grunt: '^0.4.5',
+553 silly install resolved        'grunt-contrib-uglify': '^0.6.0' },
+553 silly install resolved     scripts: { test: 'node test/basic.js' },
+553 silly install resolved     keywords: [ 'color', 'colour', 'rgb' ],
+553 silly install resolved     bugs: { url: 'https://github.com/harthur/color-convert/issues' },
+553 silly install resolved     homepage: 'https://github.com/harthur/color-convert',
+553 silly install resolved     _id: 'color-convert@0.5.2',
+553 silly install resolved     dist:
+553 silly install resolved      { shasum: 'febd9efc33674df3374ff8eeaec3bc56c79a9b35',
+553 silly install resolved        tarball: 'http://registry.npmjs.org/color-convert/-/color-convert-0.5.2.tgz' },
+553 silly install resolved     _from: 'color-convert@>=0.5.0 <0.6.0',
+553 silly install resolved     _npmVersion: '1.4.3',
+553 silly install resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
+553 silly install resolved     maintainers: [ [Object] ],
+553 silly install resolved     directories: {},
+553 silly install resolved     _shasum: 'febd9efc33674df3374ff8eeaec3bc56c79a9b35',
+553 silly install resolved     _resolved: 'https://registry.npmjs.org/color-convert/-/color-convert-0.5.2.tgz',
+553 silly install resolved     readme: 'ERROR: No README data found!' },
+553 silly install resolved   { name: 'color-string',
+553 silly install resolved     description: 'Parser and generator for CSS color strings',
+553 silly install resolved     version: '0.2.1',
+553 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+553 silly install resolved     repository:
+553 silly install resolved      { type: 'git',
+553 silly install resolved        url: 'http://github.com/harthur/color-string.git' },
+553 silly install resolved     main: './color-string',
+553 silly install resolved     dependencies: { 'color-convert': '0.5.x' },
+553 silly install resolved     devDependencies: { browserify: '>=1.0.0', 'uglify-js': '1.0.x' },
+553 silly install resolved     keywords: [ 'color', 'colour', 'rgb', 'css' ],
+553 silly install resolved     bugs: { url: 'https://github.com/harthur/color-string/issues' },
+553 silly install resolved     homepage: 'https://github.com/harthur/color-string',
+553 silly install resolved     _id: 'color-string@0.2.1',
+553 silly install resolved     dist:
+553 silly install resolved      { shasum: '2f3c1e6c1d04ddf751633b28db7fbc152055d34e',
+553 silly install resolved        tarball: 'http://registry.npmjs.org/color-string/-/color-string-0.2.1.tgz' },
+553 silly install resolved     _from: 'color-string@>=0.2.0 <0.3.0',
+553 silly install resolved     _npmVersion: '1.3.25',
+553 silly install resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
+553 silly install resolved     maintainers: [ [Object] ],
+553 silly install resolved     directories: {},
+553 silly install resolved     _shasum: '2f3c1e6c1d04ddf751633b28db7fbc152055d34e',
+553 silly install resolved     _resolved: 'https://registry.npmjs.org/color-string/-/color-string-0.2.1.tgz',
+553 silly install resolved     readme: 'ERROR: No README data found!' } ]
+554 info install color-convert@0.5.2 into /Users/TimLiu/node_modules/sharp/node_modules/color
+555 info install color-string@0.2.1 into /Users/TimLiu/node_modules/sharp/node_modules/color
+556 info installOne color-convert@0.5.2
+557 verbose installOne of color-convert to /Users/TimLiu/node_modules/sharp/node_modules/color not in flight; installing
+558 info installOne color-string@0.2.1
+559 verbose installOne of color-string to /Users/TimLiu/node_modules/sharp/node_modules/color not in flight; installing
+560 verbose lock using /Users/TimLiu/.npm/_locks/color-convert-b60b1928a98f17cc.lock for /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+561 silly install write writing color-convert 0.5.2 to /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+562 silly cache addNamed cb color-convert@0.5.2
+563 verbose unbuild node_modules/sharp/node_modules/color/node_modules/color-convert
+564 verbose lock using /Users/TimLiu/.npm/_locks/color-string-9efb26b1d3fa3732.lock for /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+565 silly install write writing color-string 0.2.1 to /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+566 silly cache addNamed cb color-string@0.2.1
+567 verbose unbuild node_modules/sharp/node_modules/color/node_modules/color-string
+568 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+569 verbose tar unpack /Users/TimLiu/.npm/color-convert/0.5.2/package.tgz
+570 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+571 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+572 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+573 silly gunzTarPerm modes [ '755', '644' ]
+574 verbose tar unpack /Users/TimLiu/.npm/color-string/0.2.1/package.tgz
+575 verbose tar unpacking to /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+576 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+577 silly gunzTarPerm modes [ '755', '644' ]
+578 silly gunzTarPerm extractEntry package.json
+579 silly gunzTarPerm extractEntry package.json
+580 silly gunzTarPerm extractEntry README.md
+581 silly gunzTarPerm extractEntry LICENSE
+582 silly gunzTarPerm extractEntry README.md
+583 silly gunzTarPerm extractEntry LICENSE
+584 silly gunzTarPerm extractEntry Gruntfile.js
+585 silly gunzTarPerm extractEntry browser.js
+586 silly gunzTarPerm extractEntry Jakefile.js
+587 silly gunzTarPerm extractEntry color-string.js
+588 silly gunzTarPerm extractEntry component.json
+589 silly gunzTarPerm extractEntry test/basic.js
+590 silly gunzTarPerm extractEntry conversions.js
+591 silly gunzTarPerm extractEntry index.js
+592 silly gunzTarPerm extractEntry component.json
+593 silly gunzTarPerm extractEntry t.diff
+594 silly gunzTarPerm extractEntry test/basic.js
+595 silly gunzTarPerm extractEntry test/speed.js
+596 silly gunzTarPerm extractEntry test.diff
+597 silly gunzTarPerm extractEntry test.html
+598 info preinstall color-string@0.2.1
+599 silly install resolved []
+600 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+601 info build /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+602 verbose linkStuff [ false,
+602 verbose linkStuff   false,
+602 verbose linkStuff   false,
+602 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules/color/node_modules' ]
+603 info linkStuff color-string@0.2.1
+604 verbose linkBins color-string@0.2.1
+605 verbose linkMans color-string@0.2.1
+606 verbose rebuildBundles color-string@0.2.1
+607 info install color-string@0.2.1
+608 info postinstall color-string@0.2.1
+609 verbose unlock done using /Users/TimLiu/.npm/_locks/color-string-9efb26b1d3fa3732.lock for /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-string
+610 info preinstall color-convert@0.5.2
+611 silly install resolved []
+612 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+613 info build /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+614 verbose linkStuff [ false,
+614 verbose linkStuff   false,
+614 verbose linkStuff   false,
+614 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules/color/node_modules' ]
+615 info linkStuff color-convert@0.5.2
+616 verbose linkBins color-convert@0.5.2
+617 verbose linkMans color-convert@0.5.2
+618 verbose rebuildBundles color-convert@0.5.2
+619 info install color-convert@0.5.2
+620 info postinstall color-convert@0.5.2
+621 verbose unlock done using /Users/TimLiu/.npm/_locks/color-convert-b60b1928a98f17cc.lock for /Users/TimLiu/node_modules/sharp/node_modules/color/node_modules/color-convert
+622 verbose about to build /Users/TimLiu/node_modules/sharp/node_modules/color
+623 info build /Users/TimLiu/node_modules/sharp/node_modules/color
+624 verbose linkStuff [ false,
+624 verbose linkStuff   false,
+624 verbose linkStuff   false,
+624 verbose linkStuff   '/Users/TimLiu/node_modules/sharp/node_modules' ]
+625 info linkStuff color@0.7.3
+626 verbose linkBins color@0.7.3
+627 verbose linkMans color@0.7.3
+628 verbose rebuildBundles color@0.7.3
+629 verbose rebuildBundles [ 'color-convert', 'color-string' ]
+630 info install color@0.7.3
+631 info postinstall color@0.7.3
+632 verbose unlock done using /Users/TimLiu/.npm/_locks/color-2213b8b700413459.lock for /Users/TimLiu/node_modules/sharp/node_modules/color
+633 verbose about to build /Users/TimLiu/node_modules/sharp
+634 info build /Users/TimLiu/node_modules/sharp
+635 verbose linkStuff [ false, false, false, '/Users/TimLiu/node_modules' ]
+636 info linkStuff sharp@0.8.1
+637 verbose linkBins sharp@0.8.1
+638 verbose linkMans sharp@0.8.1
+639 verbose rebuildBundles sharp@0.8.1
+640 verbose rebuildBundles [ '.bin', 'bluebird', 'color', 'nan', 'semver' ]
+641 info install sharp@0.8.1
+642 verbose unsafe-perm in lifecycle true
+643 info sharp@0.8.1 Failed to exec install script
+644 verbose unlock done using /Users/TimLiu/.npm/_locks/sharp-0aeac484194043a4.lock for /Users/TimLiu/node_modules/sharp
+645 verbose stack Error: sharp@0.8.1 install: `node-gyp rebuild`
+645 verbose stack Exit status 1
+645 verbose stack     at EventEmitter.<anonymous> (/usr/local/node-v0.10.33-darwin-x64/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+645 verbose stack     at EventEmitter.emit (events.js:98:17)
+645 verbose stack     at ChildProcess.<anonymous> (/usr/local/node-v0.10.33-darwin-x64/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+645 verbose stack     at ChildProcess.emit (events.js:98:17)
+645 verbose stack     at maybeClose (child_process.js:756:16)
+645 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+646 verbose pkgid sharp@0.8.1
+647 verbose cwd /Users/TimLiu/Sites/nodejs
+648 error Darwin 14.0.0
+649 error argv "node" "/usr/local/bin/npm" "install" "sharp"
+650 error node v0.10.33
+651 error npm  v2.1.11
+652 error code ELIFECYCLE
+653 error sharp@0.8.1 install: `node-gyp rebuild`
+653 error Exit status 1
+654 error Failed at the sharp@0.8.1 install script 'node-gyp rebuild'.
+654 error This is most likely a problem with the sharp package,
+654 error not with npm itself.
+654 error Tell the author that this fails on your system:
+654 error     node-gyp rebuild
+654 error You can get their info via:
+654 error     npm owner ls sharp
+654 error There is likely additional logging output above.
+655 verbose exit [ 1, true ]
+656 verbose unbuild node_modules/sharp
+657 info preuninstall sharp@0.8.1
+658 info uninstall sharp@0.8.1
+659 verbose unbuild rmStuff sharp@0.8.1 from /Users/TimLiu/node_modules
+660 info postuninstall sharp@0.8.1
+661 verbose gentlyRm vacuuming /Users/TimLiu/node_modules/sharp
+662 silly gentlyRm purging /Users/TimLiu/node_modules/sharp
+663 silly gentlyRm quitting because other entries in /Users/TimLiu/node_modules

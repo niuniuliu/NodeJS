@@ -1,0 +1,113 @@
+<p>&quot;C:\Program Files (x86)\nodejs\node.exe&quot; PDS\Test\Dashboard\DataStatusPageTest.js
+base PreRun called
+This platform is win32
+This processor architecture is ia32
+base RunStart called
+BROWSER: Chrome
+VERSION: 34.0
+OS: WinServ2008r2_Win7
+Login to PDSDashboard: http://QaApdsDash.ctp.dev.com/PDSCoreDashboard</p>
+
+<h3>PDS - Step 1 Verify YKM title is Advent Login : true</h3>
+
+<p>Login to PDSDashboard: http://QaApdsDash.ctp.dev.com/PDSCoreDashboard</p>
+
+<h3>PDS - Step 2 Verify Dashboard home URL : true</h3>
+
+<h3>PDS - Step 3_1 Verify Dashboard Data Status URL : true</h3>
+
+<p>run SQL: SELECT [DataFileInfoId] ,[Name] ,[SizeBytes] ,[UploadStartTime] ,[BusinessDate] ,[LastDownloadTime] ,[DownloadCount] ,[ParentDataFileInfoId] ,[FirmId] ,[DataFileTypeId] ,[WorkflowInstanceId] ,[IsDownloadable] ,[DataFileStatusId] FROM [PDSCoreDB].[dbo].[DataFileInfo] WHERE DataFileInfoId = 196348
+run SQL: select TOP 10 f1.Name as DataSource, dfi.DataFileInfoId as FileID, dfi.Name as FileName, dfs.Description as Status, dfi.SizeBytes/1000 as SizeinkB, dft.Description as FileType, dfi.UploadStartTime as UploadedDateTime, dfi.LastDownloadTime  as DownloadedDateTime, dfi.BusinessDate as BusinessDate from (((DataFileInfo dfi inner join firm f2 on dfi.firmId = f2.firmId) inner join DataFileType dft on dfi.dataFileTypeId = dft.dataFileTypeId) inner join DataFileStatus dfs on dfi.dataFileStatusId = dfs.dataFileStatusId) inner join (workflowInstance wi inner join (DataSourceWorkflow dsw inner join firm f1 on dsw.DataSourceFirmId = f1.firmId) on wi.datasourceWorkflowId = dsw.datasourceWorkflowId) on dfi.workflowInstanceId = wi.workflowInstanceId WHERE dfi.FirmId = 70 and dfi.DataFileTypeId in (1,4) ORDER BY dfi.[BusinessDate] DESC, dfi.[DataFileInfoId] ASC
+It&#39;s saved to: ./PDS/TestData/Dashboard/DataStatusPage<em>LoginAsTwoFirm2</em>SeeOnlyTheirOwnOriginalAndProcessedFiles<em>Firm1.txt
+It&#39;s saved to: ./PDS/TestResultData/DataStatusTable</em>2014-05-08<em>08</em>43_20.txt
+Files match</p>
+
+<h3>PDS - Step 3_2 verify Raw/Translated files for firm1 (not for other firms): true</h3>
+
+<h3>PDS - Step 4: verify Sign off and back on GLS login page: true</h3>
+
+<p>Login to PDSDashboard: http://QaApdsDash.ctp.dev.com/PDSCoreDashboard
+Error catched:InvalidElementStateError: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=34.0.1847.131)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86<em>64)
+    at new bot.Error (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\atoms\error.js:109:18)
+    at Object.bot.response.checkResponse (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\atoms\response.js:106:9)
+    at C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\webdriver.js:276:20
+    at C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\goog\base.js:1178:15
+    at webdriver.promise.ControlFlow.runInNewFrame</em> (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:1445:20)
+    at notify (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:328:12)
+    at notifyAll (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:297:7)
+    at fulfill (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:402:7)
+    at C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:1312:10
+    at C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\goog\base.js:1178:15
+==== async task ====
+WebElement.clear()
+    at webdriver.WebDriver.schedule (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\webdriver.js:267:15)
+    at webdriver.WebElement.schedule</em> (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\webdriver.js:1591:23)
+    at webdriver.WebElement.clear (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\webdriver.js:1917:15)
+    at C:\WebstormProjects\BrowserAutomation\PDS\WebPages\Dashboard\LoginPage.js:103:53
+    at C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\goog\base.js:1178:15
+    at webdriver.promise.ControlFlow.runInNewFrame</em> (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:1445:20)
+    at notify (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:328:12)
+    at notifyAll (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:297:7)
+    at fulfill (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:402:7)
+==== async task ====
+    at DataStatusPage<em>LoginAsTwoFirm2</em>SeeOnlyTheirOwnOriginalAndProcessedFiles.RunTestcase (C:\WebstormProjects\BrowserAutomation\PDS\Test\Dashboard\DataStatusPageTest.js:1483:10)
+    at C:\WebstormProjects\BrowserAutomation\testcasebase.js:168:18
+    at webdriver.promise.ControlFlow.runInNewFrame<em> (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:1445:20)
+    at webdriver.promise.ControlFlow.runEventLoop<em> (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:1310:8)
+    at wrapper [as <em>onTimeout] (timers.js:252:14)
+    at Timer.listOnTimeout <a href="timers.js:110:15">as ontimeout</a>
+==== async task ====
+    at DataStatusPage</em>LoginAsTwoFirm2<em>SeeOnlyTheirOwnOriginalAndProcessedFiles.TestcaseBase.ExecuteTestcase (C:\WebstormProjects\BrowserAutomation\testcasebase.js:167:14)
+    at C:\WebstormProjects\BrowserAutomation\testcasebase.js:150:18
+    at webdriver.promise.ControlFlow.runInNewFrame</em> (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:1445:20)
+    at webdriver.promise.ControlFlow.runEventLoop</em> (C:\WebstormProjects\BrowserAutomation\node_modules\selenium-webdriver\lib\webdriver\promise.js:1310:8)
+    at wrapper [as <em>onTimeout] (timers.js:252:14)
+    at Timer.listOnTimeout <a href="timers.js:110:15">as ontimeout</a>
+==== async task ====
+    at DataStatusPage</em>LoginAsTwoFirm2<em>SeeOnlyTheirOwnOriginalAndProcessedFiles.TestcaseBase.ExecuteTestCaseWithExceptionHandler (C:\WebstormProjects\BrowserAutomation\testcasebase.js:149:14)
+    at TC</em>DataStatusPage<em>LoginAsTwoFirm2</em>SeeOnlyTheirOwnOriginalAndProcessedFiles (C:\WebstormProjects\BrowserAutomation\PDS\Test\Dashboard\DataStatusPageTest.js:1635:20)
+    at Object.&lt;anonymous&gt; (C:\WebstormProjects\BrowserAutomation\PDS\Test\Dashboard\DataStatusPageTest.js:1662:1)
+    at Module.<em>compile (module.js:456:26)
+    at Object.Module.</em>extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module.<em>load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+TCID:2429c87b-623f-4807-9368-a2d000113db2
+PDSReleaseNumber object created
+Logging results to ET 
+ Test case Passed? false
+base GetVersionMajor called
+overridden GetVersionMajor called
+base GetVersionMinor called
+overridden GetVersionMinor called
+base GetVersionRevision called
+overridden GetVersionRevision called
+base GetVersionBuild called
+overridden GetVersionBuild called
+200
+14</em>10<em>1</em>2144
+200
+14<em>10</em>1<em>2144
+200
+14</em>10<em>1</em>2144
+200
+14<em>10</em>1<em>2144
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/script/2429c87b-623f-4807-9368-a2d000113db2/assignments
+200
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/scriptassignment/6b95b1c6-faec-4068-a406-a324017c6a03/allrelationships
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/scriptassignment/0bd35a88-ba2b-48b2-9530-a32401877103/allrelationships
+200
+200
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/scriptassignment/0bd35a88-ba2b-48b2-9530-a32401877103/runs
+201
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/scriptrun/7cf7672c-274b-4e8f-bf01-a325000c1b9b?$expand=stepresults
+200
+{&quot;AttemptToComplete&quot;:true,&quot;Status&quot;:&quot;Failed&quot;,&quot;ActualDuration&quot;:&quot;0 minutes&quot;,&quot;FieldValues&quot;:{&quot;TestExecutionLog&quot;:&quot;InvalidElementStateError: invalid element state: Element is not currently interactable and may not be manipulated\n  (Session info: chrome=34.0.1847.131)\n  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86</em>64)\n    at new bot.Error (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\atoms\error.js:109:18)\n    at Object.bot.response.checkResponse (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\atoms\response.js:106:9)\n    at C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\webdriver.js:276:20\n    at C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\goog\base.js:1178:15\n    at webdriver.promise.ControlFlow.runInNewFrame<em> (C:\WebstormProjects\BrowserAutomation\node</em>modules\selenium-webdriver\lib\webdriver\promise.js:1445:20)\n    at notify (C:\WebstormProjects\BrowserAutomation\node<em>modules\selenium-webdriver\lib\webdriver\promise.js:328:12)\n    at notifyAll (C:\WebstormProjects\BrowserAu&quot;,&quot;VersionBuild&quot;:&quot;2144\r&quot;,&quot;VersionMajor&quot;:&quot;14&quot;,&quot;VersionMinor&quot;:&quot;10&quot;,&quot;VersionRevision&quot;:&quot;1&quot;,&quot;VersionBrowser&quot;:&quot;34.0&quot;,&quot;BrowserType&quot;:&quot;Chrome&quot;,&quot;OperatingSystem&quot;:&quot;WinServ2008r2</em>Win7&quot;,&quot;ActualTestExecutionTime&quot;:0},&quot;StepResults&quot;:[{&quot;ActualResult&quot;:&quot;&quot;,&quot;Outcome&quot;:&quot;Failed&quot;,&quot;Id&quot;:&quot;9e815b00-458a-4309-9a3d-a325000c1b9f&quot;},{&quot;ActualResult&quot;:&quot;&quot;,&quot;Outcome&quot;:&quot;Failed&quot;,&quot;Id&quot;:&quot;8e3ee168-3a8c-4ac0-80fc-a325000c1b9f&quot;},{&quot;ActualResult&quot;:&quot;&quot;,&quot;Outcome&quot;:&quot;Failed&quot;,&quot;Id&quot;:&quot;36b59e73-03a7-4f94-b816-a325000c1b9f&quot;},{&quot;ActualResult&quot;:&quot;&quot;,&quot;Outcome&quot;:&quot;Failed&quot;,&quot;Id&quot;:&quot;951dd80f-756b-4bc7-ad36-a325000c1b9f&quot;},{&quot;ActualResult&quot;:&quot;&quot;,&quot;Outcome&quot;:&quot;Failed&quot;,&quot;Id&quot;:&quot;963a55c2-c853-483f-a27f-a325000c1b9f&quot;}]}
+The URL is:http://enterprisetester.advent.com/EnterpriseTester/api/scriptrun/7cf7672c-274b-4e8f-bf01-a325000c1b9b
+200
+Test result is successfully logged to ET? true</p>
+
+<p>Process finished with exit code 0</p>
